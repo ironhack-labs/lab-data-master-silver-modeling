@@ -8,12 +8,24 @@
 
 En este lab implementarás un pipeline completo de ingestión, limpieza y modelado usando Snowflake y la arquitectura Medallion. Practicarás el uso de stages internos, `COPY INTO`, nomenclatura SEAT y modelado normalizado en Silver.
 
+## Requisitos
+
+* Haz un ***fork*** de este repositorio.
+* Clona este repositorio.
+
+## Entrega
+
+- Haz Commit y Push
+- Crea un Pull Request (PR)
+- Copia el enlace a tu PR (con tu solución) y pégalo en el campo de entrega del portal del estudiante – solo así se considerará entregado el lab
+
 
 ## 📦 Dataset: `orders.csv`
 
 Contiene:
 
 ```
+
 order\_id,customer\_id,product\_id,quantity,price\_total,order\_date,order\_type
 1001,123,P001,3,59.90,2024-12-01,online
 1002,124,P002,1,19.90,2024-12-01,store
@@ -21,6 +33,7 @@ order\_id,customer\_id,product\_id,quantity,price\_total,order\_date,order\_type
 1004,123,P001,1,19.97,2024-12-02,store
 1005,126,P004,abc,39.90,2024-12-03,promo
 1006,127,P005,2,invalid,invalid,online
+
 ````
 
 🧠 **Preguntas:**
@@ -141,7 +154,9 @@ En tu archivo `lab-notes.md`, responde:
 3. ¿Qué tips propones para mantener un pipeline ETL flexible?
 4. ¿Cómo aplicarías esto en una empresa real como SEAT?
 
-## ✅ Entregables
+## Entregables
+
+Dentro de tu repositorio forkeado, asegúrate de incluir los siguientes archivos:
 
 * `orders.csv`: archivo cargado
 * `bronze_copyinto.sql`: tabla + ingestión COPY
